@@ -1,4 +1,5 @@
 import { NFC } from "nfc-pcsc";
+
 const nfc = new NFC();
 
 nfc.on("reader", (reader) => {
