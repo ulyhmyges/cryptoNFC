@@ -1,2 +1,3 @@
 hardhat/node_modules/
 node-modules/
+.DS_Store
