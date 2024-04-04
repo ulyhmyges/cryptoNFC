@@ -3,8 +3,3 @@ node-modules/
 
 // hardhat project
 hardhat/node_modules/
-
-// backend project
-backend/node_modules/
-backend/.env
-backend/dist/
