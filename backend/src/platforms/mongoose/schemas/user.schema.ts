@@ -28,7 +28,7 @@ export const UserSchema = new mongoose.Schema<IUser>({
     role: {
         type: mongoose.SchemaTypes.String,
         required: true,
-        enum: ['seller', 'buyer']
+        enum: ['marchant', 'client']
     }
 }, {
     versionKey: false,
