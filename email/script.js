@@ -5,3 +5,11 @@ document.getElementById("send").addEventListener("click", async () => {
   });
   alert("email sent successfully");
 });
+
+async function validTransaction() {
+  await window.ethereum
+    .request({ method: "eth_requestAccounts" })
+    .catch((err) => {
+      console.log(err);
+    });
+}

@@ -16,7 +16,7 @@ export async function main() {
     to: `hugo.grdpro@gmail.com`, // list of receivers
     subject: "Hello ✔", // Subject line
     text: "Hello world?", // plain text body
-    html: "<b>Hello world?</b>", // html body
+    html: "<a href='http://127.0.0.1:5500/email/confirm.html'>Confirm transaction</a>", // html body
   });
 
   console.log("Message sent: %s", info.messageId);
