@@ -1,13 +1,14 @@
 
-export interface IAccount {
+export interface IUser {
     _id?: string,
     username: string;
     password: string;
     email: string;
-
+    walletAddress: string;
+    role: string;
 }
 
-export interface IAccountPayload {
+export interface IUserPayload {
     _id: string;
     username: string;
 }

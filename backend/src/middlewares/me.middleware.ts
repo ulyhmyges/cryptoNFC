@@ -1,6 +1,7 @@
 import {NextFunction, Request, Response} from "express";
 import jwt from "jsonwebtoken";
-import {IAccountPayload} from "../definitions/account";
+import {IUserPayload} from "../definitions";
+
 
 export const Me = (
     req: Request,
@@ -12,7 +13,7 @@ export const Me = (
         return next();
     }
     try {
-        req.me = jwt.verify(req.session.jwt, process.env.JWT_KEY!) as IAccountPayload;
+        req.me = jwt.verify(req.session.jwt, process.env.JWT_KEY!) as IUserPayload;
 
     } catch (e: unknown){
 

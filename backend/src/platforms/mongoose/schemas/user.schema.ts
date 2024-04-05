@@ -1,11 +1,11 @@
 import mongoose from "mongoose";
-import {IAccount} from "../../../definitions";
+import {IUser} from "../../../definitions";
 
 
 /**
  * Schema definition
  */
-export const AccountSchema = new mongoose.Schema<IAccount>({
+export const UserSchema = new mongoose.Schema<IUser>({
     username: {
         type: mongoose.SchemaTypes.String,
         required: true,
@@ -19,10 +19,20 @@ export const AccountSchema = new mongoose.Schema<IAccount>({
         type: mongoose.SchemaTypes.String,
         required: true,
         unique: true
+    },
+    walletAddress: {
+        type: mongoose.SchemaTypes.String,
+        required: true,
+        unique: true
+    },
+    role: {
+        type: mongoose.SchemaTypes.String,
+        required: true,
+        enum: ['seller', 'buyer']
     }
 }, {
     versionKey: false,
-    collection: 'accounts',
+    collection: 'users',
     timestamps: true,
     toJSON: {
         transform(doc, ret){
@@ -31,5 +41,5 @@ export const AccountSchema = new mongoose.Schema<IAccount>({
     }
 });
 
-export const AccountModel: mongoose.Model<IAccount> = mongoose.model<IAccount>('Account', AccountSchema);
+export const UserModel: mongoose.Model<IUser> = mongoose.model<IUser>('Account', UserSchema);
 
