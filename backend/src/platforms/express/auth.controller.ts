@@ -27,7 +27,7 @@ class AuthController implements ExpressController {
 
 
     constructor(connection: Mongoose) {
-        this._userModel = connection.model<IUser>('Account', UserSchema);
+        this._userModel = connection.model<IUser>('User', UserSchema);
     }
 
     async signup(req: Request, res: Response, next: NextFunction) {
@@ -89,6 +89,37 @@ class AuthController implements ExpressController {
         res.send({});
     }
 
+    async find(filter: object): Promise<IUser[] | null> {
+        try {
+            return await this._userModel.find(filter).exec();
+        } catch (e: unknown) {
+            return null;
+        }
+    }
+
+
+    async findById(id: any) : Promise<IUser | null> {
+        try {
+            return await this._userModel.findById(id).exec();
+        } catch (e: unknown) {
+            return null;
+        }
+    }
+    
+
+    async findOne(user: IUser): Promise<IUser | null> {
+        try {
+            return await this._userModel.findOne({
+                username: user.username,
+                password: PasswordUtil.toHash(user.password)
+            }).exec();
+        } catch (e: unknown) {
+            return null;
+        }
+    }
+
+
+
     buildRoutes(): express.Router {
         const router = express.Router();
         router.get('/', (req: Request, res: Response) => {
@@ -98,6 +129,9 @@ class AuthController implements ExpressController {
         router.post('/signin', this.signin.bind(this));
         router.get('/me', Me, this.me.bind(this));
         router.post('/signout', this.signout.bind(this));
+
+        router.get('/users/:id', this.findById.bind(this));
+        router.get('/users', this.find.bind(this));
         return router;
     }
 }
