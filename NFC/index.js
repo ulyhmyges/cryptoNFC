@@ -1,5 +1,6 @@
 import { NFC } from "nfc-pcsc";
 import pretty from "./mini-logger.js";
+
 const nfc = new NFC();
 
 nfc.on("reader", (reader) => {
