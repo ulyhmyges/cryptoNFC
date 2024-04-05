@@ -1,7 +1,16 @@
-import React from "react";
+import React, {useState} from "react";
 import "./styles.css";
 
+
+
 function Home({ role }) {
+
+  const [nfc, setNfc] = useState('');
+  const handleOnClick = () => {
+    //const p = readNfc();
+    //console.log("p", p);
+    setNfc("Read data from NFC device...")
+  }
   const handleMerchantTransaction = () => {
     // Logique pour la transaction du marchand (à implémenter plus tard)
     console.log("Transaction du marchand");
@@ -39,6 +48,10 @@ function Home({ role }) {
           <button type="submit">Transact</button>
         </form>
       )}
+      <div>
+        <p>Identifiant : {nfc}</p>
+        <button onClick={handleOnClick}>Read</button>
+      </div>
     </div>
   );
 }
