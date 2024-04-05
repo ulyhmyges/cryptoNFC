@@ -1,68 +1,180 @@
-<mxfile host="app.diagrams.net" modified="2024-04-03T09:51:07.766Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.2.1 Safari/605.1.15" etag="5zPEd-k48ZSsPn8Uh7dT" version="24.2.1" type="device">
+<mxfile host="app.diagrams.net" modified="2024-04-05T12:15:26.308Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36" etag="C2axiJTcu6NarhLoX-YZ" version="24.2.2" type="device" pages="2">
   <diagram name="Page-1" id="a8PBiq2PuBhrbPn_pdct">
-    <mxGraphModel dx="954" dy="570" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="954" dy="644" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="eLUCA3yf0UrvSS490ggB-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="eLUCA3yf0UrvSS490ggB-1" target="eLUCA3yf0UrvSS490ggB-6">
+        <mxCell id="eLUCA3yf0UrvSS490ggB-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="eLUCA3yf0UrvSS490ggB-1" target="eLUCA3yf0UrvSS490ggB-6" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="eLUCA3yf0UrvSS490ggB-1" value="NFCReader" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="eLUCA3yf0UrvSS490ggB-1" value="NFCReader" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="70" y="190" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="eLUCA3yf0UrvSS490ggB-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="eLUCA3yf0UrvSS490ggB-2" target="eLUCA3yf0UrvSS490ggB-4">
+        <mxCell id="eLUCA3yf0UrvSS490ggB-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="eLUCA3yf0UrvSS490ggB-2" target="eLUCA3yf0UrvSS490ggB-4" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="eLUCA3yf0UrvSS490ggB-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;startArrow=classic;startFill=1;" edge="1" parent="1" source="eLUCA3yf0UrvSS490ggB-2" target="eLUCA3yf0UrvSS490ggB-3">
+        <mxCell id="eLUCA3yf0UrvSS490ggB-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;startArrow=classic;startFill=1;" parent="1" source="eLUCA3yf0UrvSS490ggB-2" target="eLUCA3yf0UrvSS490ggB-3" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="eLUCA3yf0UrvSS490ggB-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="eLUCA3yf0UrvSS490ggB-2" target="eLUCA3yf0UrvSS490ggB-1">
+        <mxCell id="eLUCA3yf0UrvSS490ggB-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="eLUCA3yf0UrvSS490ggB-2" target="eLUCA3yf0UrvSS490ggB-1" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="eLUCA3yf0UrvSS490ggB-2" value="Client App&lt;div&gt;React&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="eLUCA3yf0UrvSS490ggB-2" value="Client App&lt;div&gt;React&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="360" y="190" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="eLUCA3yf0UrvSS490ggB-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;startArrow=classic;startFill=1;" edge="1" parent="1" source="eLUCA3yf0UrvSS490ggB-3" target="eLUCA3yf0UrvSS490ggB-5">
+        <mxCell id="eLUCA3yf0UrvSS490ggB-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;startArrow=classic;startFill=1;" parent="1" source="eLUCA3yf0UrvSS490ggB-3" target="eLUCA3yf0UrvSS490ggB-5" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="eLUCA3yf0UrvSS490ggB-3" value="Backend&lt;div&gt;Nodejs&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="eLUCA3yf0UrvSS490ggB-3" value="Backend&lt;div&gt;Nodejs&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="360" y="340" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="eLUCA3yf0UrvSS490ggB-4" value="RPC node&lt;div&gt;Hardhat&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="eLUCA3yf0UrvSS490ggB-4" value="RPC node&lt;div&gt;Hardhat&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="680" y="190" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="eLUCA3yf0UrvSS490ggB-5" value="BDD&lt;div&gt;Mongo&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="eLUCA3yf0UrvSS490ggB-5" value="BDD&lt;div&gt;Mongo&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="360" y="490" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="eLUCA3yf0UrvSS490ggB-6" value="NFC device&lt;div&gt;ACR122U PICC Interface&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="eLUCA3yf0UrvSS490ggB-6" value="NFC device&lt;div&gt;ACR122U PICC Interface&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="70" y="70" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="eLUCA3yf0UrvSS490ggB-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="eLUCA3yf0UrvSS490ggB-2" target="eLUCA3yf0UrvSS490ggB-2">
+        <mxCell id="eLUCA3yf0UrvSS490ggB-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="eLUCA3yf0UrvSS490ggB-2" target="eLUCA3yf0UrvSS490ggB-2" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="eLUCA3yf0UrvSS490ggB-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="eLUCA3yf0UrvSS490ggB-8" target="eLUCA3yf0UrvSS490ggB-2">
+        <mxCell id="eLUCA3yf0UrvSS490ggB-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="eLUCA3yf0UrvSS490ggB-8" target="eLUCA3yf0UrvSS490ggB-2" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="eLUCA3yf0UrvSS490ggB-8" value="User" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+        <mxCell id="eLUCA3yf0UrvSS490ggB-8" value="User" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" parent="1" vertex="1">
           <mxGeometry x="405" y="50" width="30" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="eLUCA3yf0UrvSS490ggB-16" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;API&lt;/h1&gt;&lt;p&gt;Créer une requête liste de factures d&#39;un user&lt;/p&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+        <mxCell id="eLUCA3yf0UrvSS490ggB-16" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;API&lt;/h1&gt;&lt;p&gt;Créer une requête liste de factures d&#39;un user&lt;/p&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="470" y="330" width="180" height="120" as="geometry" />
         </mxCell>
-        <mxCell id="eLUCA3yf0UrvSS490ggB-17" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;Component&lt;/h1&gt;&lt;p&gt;Afficher liste de factures à l&#39;aide d&#39;une requête axios&lt;/p&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+        <mxCell id="eLUCA3yf0UrvSS490ggB-17" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;Component&lt;/h1&gt;&lt;p&gt;Afficher liste de factures à l&#39;aide d&#39;une requête axios&lt;/p&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="460" y="170" width="180" height="120" as="geometry" />
         </mxCell>
-        <mxCell id="eLUCA3yf0UrvSS490ggB-18" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;fields&lt;/h1&gt;&lt;p&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;id (uint)&lt;/li&gt;&lt;li&gt;username (string)&lt;/li&gt;&lt;li&gt;hashed private key (string)&lt;/li&gt;&lt;li&gt;bills (array of Bill objects)&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;/p&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+        <mxCell id="eLUCA3yf0UrvSS490ggB-18" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;fields&lt;/h1&gt;&lt;p&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;id (uint)&lt;/li&gt;&lt;li&gt;username (string)&lt;/li&gt;&lt;li&gt;hashed private key (string)&lt;/li&gt;&lt;li&gt;bills (array of Bill objects)&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;/p&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="460" y="470" width="180" height="120" as="geometry" />
         </mxCell>
-        <mxCell id="eLUCA3yf0UrvSS490ggB-19" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;WEB NFC API&lt;/h1&gt;&lt;p&gt;Ecrire et lire sur l&#39;appereil NFC&lt;/p&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+        <mxCell id="eLUCA3yf0UrvSS490ggB-19" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;WEB NFC API&lt;/h1&gt;&lt;p&gt;Ecrire et lire sur l&#39;appereil NFC&lt;/p&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" parent="1" vertex="1">
           <mxGeometry y="230" width="180" height="120" as="geometry" />
         </mxCell>
-        <mxCell id="eLUCA3yf0UrvSS490ggB-20" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;Crypto payment&lt;/h1&gt;&lt;p&gt;Effectuer une transaction de payment en ethers (ETH)&lt;/p&gt;&lt;p&gt;à l&#39;aide de l&#39;appareil NFC.&lt;/p&gt;&lt;p&gt;Le user autorise un montant donné de ETH à transférer de son wallet au wallet du marchant.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+        <mxCell id="eLUCA3yf0UrvSS490ggB-20" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;Crypto payment&lt;/h1&gt;&lt;p&gt;Effectuer une transaction de payment en ethers (ETH)&lt;/p&gt;&lt;p&gt;à l&#39;aide de l&#39;appareil NFC.&lt;/p&gt;&lt;p&gt;Le user autorise un montant donné de ETH à transférer de son wallet au wallet du marchant.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="540" width="300" height="150" as="geometry" />
         </mxCell>
-        <mxCell id="eLUCA3yf0UrvSS490ggB-21" value="struct &lt;b&gt;Bill&lt;/b&gt; {&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;uint quantity&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;string date (yyyy-mm-dd)&lt;/span&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;string tokenName&lt;/span&gt;&lt;br&gt;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;address transaction&lt;/span&gt;&lt;br&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+        <mxCell id="eLUCA3yf0UrvSS490ggB-21" value="struct &lt;b&gt;Bill&lt;/b&gt; {&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;uint quantity&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;string date (yyyy-mm-dd)&lt;/span&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;string tokenName&lt;/span&gt;&lt;br&gt;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;address transaction&lt;/span&gt;&lt;br&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="700" y="500" width="180" height="120" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="ZWWaTRRNIRdITGDqh24x" name="Page-2">
+    <mxGraphModel dx="954" dy="644" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="n0rDPUWQO1riLSEUtg_M-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="n0rDPUWQO1riLSEUtg_M-2" target="n0rDPUWQO1riLSEUtg_M-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n0rDPUWQO1riLSEUtg_M-2" value="&lt;b&gt;Lecteur NFC&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="250" y="110" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="n0rDPUWQO1riLSEUtg_M-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="n0rDPUWQO1riLSEUtg_M-3" target="n0rDPUWQO1riLSEUtg_M-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n0rDPUWQO1riLSEUtg_M-3" value="Client" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="60" y="91" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="n0rDPUWQO1riLSEUtg_M-5" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;&lt;br&gt;&lt;/h1&gt;&lt;div&gt;le client pose sa carte NFC sur le lecteur NFC contenant un identifiant unique que le marchant récupère&lt;/div&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="101" y="10" width="180" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="n0rDPUWQO1riLSEUtg_M-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="n0rDPUWQO1riLSEUtg_M-6" target="n0rDPUWQO1riLSEUtg_M-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n0rDPUWQO1riLSEUtg_M-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="n0rDPUWQO1riLSEUtg_M-6" target="n0rDPUWQO1riLSEUtg_M-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n0rDPUWQO1riLSEUtg_M-6" value="&lt;b&gt;reactapp&lt;/b&gt;&lt;div&gt;interface utilisateur du marchant et du client&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="470" y="110" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="n0rDPUWQO1riLSEUtg_M-10" value="code unique" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="390" y="110" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="n0rDPUWQO1riLSEUtg_M-13" value="page d&#39;accueil du marchant" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="500" y="61" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="n0rDPUWQO1riLSEUtg_M-14" value="&lt;b&gt;backend&lt;/b&gt;&lt;div&gt;- username&lt;/div&gt;&lt;div&gt;- email&lt;/div&gt;&lt;div&gt;- wallet address&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="690" y="110" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="n0rDPUWQO1riLSEUtg_M-16" value="get(code)" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="610" y="110" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="n0rDPUWQO1riLSEUtg_M-18" value="Page Requête marchant" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="420" y="250" width="210" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="n0rDPUWQO1riLSEUtg_M-11" value="&lt;div&gt;&lt;b&gt;Formulaire&lt;/b&gt;&lt;/div&gt;&lt;div&gt;- username&lt;/div&gt;&lt;div&gt;- wallet address&lt;/div&gt;&lt;div&gt;- montant à rentrer par le marchant&lt;/div&gt;&lt;div&gt;- button envoyer&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;br&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="n0rDPUWQO1riLSEUtg_M-18">
+          <mxGeometry x="20" y="60" width="180" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="n0rDPUWQO1riLSEUtg_M-21" value="Envoi email au client identifié contenant un lien vers la transaction metamask" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="470" y="525" width="150" height="85" as="geometry" />
+        </mxCell>
+        <mxCell id="n0rDPUWQO1riLSEUtg_M-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="n0rDPUWQO1riLSEUtg_M-11" target="n0rDPUWQO1riLSEUtg_M-21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n0rDPUWQO1riLSEUtg_M-23" value="Entrer le montant&lt;div&gt;Valider en cliquant sur le bouton envoyer&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="650" y="290" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="n0rDPUWQO1riLSEUtg_M-42" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="n0rDPUWQO1riLSEUtg_M-24" target="n0rDPUWQO1riLSEUtg_M-41">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n0rDPUWQO1riLSEUtg_M-24" value="Le client valide la transaction sur metamask" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="210" y="542.5" width="130" height="87.5" as="geometry" />
+        </mxCell>
+        <mxCell id="n0rDPUWQO1riLSEUtg_M-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.992;entryY=0.4;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="n0rDPUWQO1riLSEUtg_M-21" target="n0rDPUWQO1riLSEUtg_M-24">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n0rDPUWQO1riLSEUtg_M-27" value="Page client" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="170" y="467.5" width="200" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="n0rDPUWQO1riLSEUtg_M-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" target="n0rDPUWQO1riLSEUtg_M-11">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="730" y="330" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="n0rDPUWQO1riLSEUtg_M-38" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="n0rDPUWQO1riLSEUtg_M-37" target="n0rDPUWQO1riLSEUtg_M-21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n0rDPUWQO1riLSEUtg_M-37" value="Client" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="735" y="537.5" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="n0rDPUWQO1riLSEUtg_M-39" value="Marchant" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="740" y="275" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="n0rDPUWQO1riLSEUtg_M-40" value="clic sur le lien" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="660" y="520" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="n0rDPUWQO1riLSEUtg_M-41" value="facture emise et envoyer en base de donnée dans la table &quot;bills&quot;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="202.5" y="750" width="145" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="n0rDPUWQO1riLSEUtg_M-43" value="Page client" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="450" y="750" width="200" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="n0rDPUWQO1riLSEUtg_M-44" value="Afficher la liste des factures du client" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="n0rDPUWQO1riLSEUtg_M-43">
+          <mxGeometry x="40" y="70" width="130" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="n0rDPUWQO1riLSEUtg_M-45" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.992;entryY=0.617;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="n0rDPUWQO1riLSEUtg_M-44" target="n0rDPUWQO1riLSEUtg_M-41">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n0rDPUWQO1riLSEUtg_M-46" value="get" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="384" y="760" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="n0rDPUWQO1riLSEUtg_M-48" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;Scenario: Effectuer un paiement crypto via NFC&lt;/h1&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry width="660" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="n0rDPUWQO1riLSEUtg_M-49" value="objet &lt;b&gt;ethereum&lt;/b&gt; de metamask dans le navigateur" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="500" y="650" width="130" height="72.5" as="geometry" />
+        </mxCell>
+        <mxCell id="n0rDPUWQO1riLSEUtg_M-50" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.58;entryY=0.988;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="n0rDPUWQO1riLSEUtg_M-49" target="n0rDPUWQO1riLSEUtg_M-21">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

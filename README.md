@@ -17,6 +17,8 @@ make
 ### Architectural diagram
 ![Schema](./schema_crypto_payment.png)
 
+### Scenario payment
+![Scenario](./scenario_crypto_payment.png)
 
 ### Frontend
     - React
@@ -35,7 +37,7 @@ make
 ## Contributing
 
 - [Hugo](https://github.com/Ascensian)
-- [Youssouf]()
+- [Youssouf](https://github.com/ymistercap)
 - [Hanane](https://github.com/ulyh)
 
 
