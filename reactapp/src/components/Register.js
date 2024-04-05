@@ -22,7 +22,7 @@ function Register() {
 
     console.log(formData);
 
-    navigate("/home");
+    navigate("/login");
   };
 
   return (
