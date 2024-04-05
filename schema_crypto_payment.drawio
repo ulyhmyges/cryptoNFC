@@ -1,0 +1,70 @@
+<mxfile host="app.diagrams.net" modified="2024-04-03T09:51:07.766Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.2.1 Safari/605.1.15" etag="5zPEd-k48ZSsPn8Uh7dT" version="24.2.1" type="device">
+  <diagram name="Page-1" id="a8PBiq2PuBhrbPn_pdct">
+    <mxGraphModel dx="954" dy="570" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="eLUCA3yf0UrvSS490ggB-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="eLUCA3yf0UrvSS490ggB-1" target="eLUCA3yf0UrvSS490ggB-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="eLUCA3yf0UrvSS490ggB-1" value="NFCReader" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="70" y="190" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="eLUCA3yf0UrvSS490ggB-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="eLUCA3yf0UrvSS490ggB-2" target="eLUCA3yf0UrvSS490ggB-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="eLUCA3yf0UrvSS490ggB-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;startArrow=classic;startFill=1;" edge="1" parent="1" source="eLUCA3yf0UrvSS490ggB-2" target="eLUCA3yf0UrvSS490ggB-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="eLUCA3yf0UrvSS490ggB-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="eLUCA3yf0UrvSS490ggB-2" target="eLUCA3yf0UrvSS490ggB-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="eLUCA3yf0UrvSS490ggB-2" value="Client App&lt;div&gt;React&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="360" y="190" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="eLUCA3yf0UrvSS490ggB-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;startArrow=classic;startFill=1;" edge="1" parent="1" source="eLUCA3yf0UrvSS490ggB-3" target="eLUCA3yf0UrvSS490ggB-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="eLUCA3yf0UrvSS490ggB-3" value="Backend&lt;div&gt;Nodejs&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="360" y="340" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="eLUCA3yf0UrvSS490ggB-4" value="RPC node&lt;div&gt;Hardhat&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="680" y="190" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="eLUCA3yf0UrvSS490ggB-5" value="BDD&lt;div&gt;Mongo&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="360" y="490" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="eLUCA3yf0UrvSS490ggB-6" value="NFC device&lt;div&gt;ACR122U PICC Interface&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="70" y="70" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="eLUCA3yf0UrvSS490ggB-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="eLUCA3yf0UrvSS490ggB-2" target="eLUCA3yf0UrvSS490ggB-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="eLUCA3yf0UrvSS490ggB-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="eLUCA3yf0UrvSS490ggB-8" target="eLUCA3yf0UrvSS490ggB-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="eLUCA3yf0UrvSS490ggB-8" value="User" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="405" y="50" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="eLUCA3yf0UrvSS490ggB-16" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;API&lt;/h1&gt;&lt;p&gt;Créer une requête liste de factures d&#39;un user&lt;/p&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="470" y="330" width="180" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="eLUCA3yf0UrvSS490ggB-17" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;Component&lt;/h1&gt;&lt;p&gt;Afficher liste de factures à l&#39;aide d&#39;une requête axios&lt;/p&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="460" y="170" width="180" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="eLUCA3yf0UrvSS490ggB-18" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;fields&lt;/h1&gt;&lt;p&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;id (uint)&lt;/li&gt;&lt;li&gt;username (string)&lt;/li&gt;&lt;li&gt;hashed private key (string)&lt;/li&gt;&lt;li&gt;bills (array of Bill objects)&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;/p&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="460" y="470" width="180" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="eLUCA3yf0UrvSS490ggB-19" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;WEB NFC API&lt;/h1&gt;&lt;p&gt;Ecrire et lire sur l&#39;appereil NFC&lt;/p&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry y="230" width="180" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="eLUCA3yf0UrvSS490ggB-20" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;Crypto payment&lt;/h1&gt;&lt;p&gt;Effectuer une transaction de payment en ethers (ETH)&lt;/p&gt;&lt;p&gt;à l&#39;aide de l&#39;appareil NFC.&lt;/p&gt;&lt;p&gt;Le user autorise un montant donné de ETH à transférer de son wallet au wallet du marchant.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="540" width="300" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="eLUCA3yf0UrvSS490ggB-21" value="struct &lt;b&gt;Bill&lt;/b&gt; {&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;uint quantity&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;string date (yyyy-mm-dd)&lt;/span&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;string tokenName&lt;/span&gt;&lt;br&gt;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;address transaction&lt;/span&gt;&lt;br&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="700" y="500" width="180" height="120" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

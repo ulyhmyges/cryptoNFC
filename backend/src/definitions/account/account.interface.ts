@@ -1,12 +1,13 @@
 
 export interface IAccount {
     _id?: string,
-    login: string;
+    username: string;
     password: string;
     email: string;
+
 }
 
 export interface IAccountPayload {
     _id: string;
-    login: string;
+    username: string;
 }

@@ -6,7 +6,7 @@ import {IAccount} from "../../../definitions";
  * Schema definition
  */
 export const AccountSchema = new mongoose.Schema<IAccount>({
-    login: {
+    username: {
         type: mongoose.SchemaTypes.String,
         required: true,
         unique: true

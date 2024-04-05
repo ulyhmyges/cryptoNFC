@@ -1,5 +1,3 @@
 node-modules/
 .DS_Store
-
-// hardhat project
-hardhat/node_modules/
+.idea/
