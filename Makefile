@@ -1,5 +1,5 @@
 up: down
-	@echo "docker compose up"
+	@echo "MongoDB container cryptobox is running..."
 	@docker compose up --build -d
 
 down:
