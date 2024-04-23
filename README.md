@@ -1,4 +1,4 @@
-# crypto_payment_NFC
+# cryptoNFC
 
 ## Purpose
 
@@ -15,7 +15,7 @@ make
 ## Description
 
 ### Architectural diagram
-![Schema](./schema_crypto_payment.png)
+![Schema](./architecture_cryptoNFC.png)
 
 ### Scenario payment
 ![Scenario](./scenario_crypto_payment.png)
@@ -27,17 +27,21 @@ make
 ### Backend
     - Nodejs
     - Typescript
+    - Manage - OpenZeppelin Service
+        -> Relayer
 
 ### Database
     - Mongodb
+
+### Blockchain
+    - Access control - OpenZeppelin Service
+    - Smart contract NFT Factory
 
 ### Git flow
 ![Git flow](./gitflow.png)
 
 ## Contributing
 
-- [Hugo](https://github.com/Ascensian)
-- [Youssouf](https://github.com/ymistercap)
 - [Hanane](https://github.com/ulyh)
 
 
