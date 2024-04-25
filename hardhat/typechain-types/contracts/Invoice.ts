@@ -26,7 +26,7 @@ import type {
 export declare namespace BillDefinition {
   export type BillStruct = {
     amount: BigNumberish;
-    status: string;
+    status: BigNumberish;
     timestamp: string;
     transactionHash: AddressLike;
     customer: AddressLike;
@@ -35,14 +35,14 @@ export declare namespace BillDefinition {
 
   export type BillStructOutput = [
     amount: bigint,
-    status: string,
+    status: bigint,
     timestamp: string,
     transactionHash: string,
     customer: string,
     seller: string
   ] & {
     amount: bigint;
-    status: string;
+    status: bigint;
     timestamp: string;
     transactionHash: string;
     customer: string;

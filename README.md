@@ -35,7 +35,14 @@ make
 
 ### Blockchain
     - Access control - OpenZeppelin Service
-    - Smart contract NFT Factory
+    - Smart contracts :
+        *   Invoice
+            => Smart contract of NFT that represent a payment's invoice
+        *   InvoiceFactory
+            => Smart contrat with Factory pattern to generate an instance of Invoice smart contract
+        *   BillDefinition
+            => Smart contract to share information between others smart contracts
+    
 
 ### Git flow
 ![Git flow](./gitflow.png)

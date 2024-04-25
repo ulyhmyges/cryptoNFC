@@ -7,17 +7,17 @@ import "./BillDefinition.sol";
 
 contract Invoice is ERC721, AccessControl {
 
-    BillDefinition.Bill private invoice_paper;
+    BillDefinition.Bill private invoicePaper;
     bytes32 public constant INVOICE_ROLE = keccak256("INVOICE_ROLE");
 
     constructor (BillDefinition.Bill memory bill) ERC721("Invoice", "BILL") {
-        invoice_paper = bill;
-        _grantRole(INVOICE_ROLE, invoice_paper.customer);
-        _grantRole(INVOICE_ROLE, invoice_paper.seller);
+        invoicePaper = bill;
+        _grantRole(INVOICE_ROLE, invoicePaper.customer);
+        _grantRole(INVOICE_ROLE, invoicePaper.seller);
     }
 
     function getInvoice() public view onlyRole(INVOICE_ROLE) returns (BillDefinition.Bill memory) {
-        return invoice_paper;
+        return invoicePaper;
     }
 
     // Explicit override to resolve ambiguity

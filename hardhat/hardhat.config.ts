@@ -12,9 +12,12 @@ const config: HardhatUserConfig = {
   solidity: "0.8.24",
   defaultNetwork: "localhost",
   networks: {
-    hardhat: {},
+    hardhat: {
+      initialBaseFeePerGas: 0,
+    },
     holesky: {
-      url: `${RPC_URL_HOLESKY}`
+      url: `${RPC_URL_HOLESKY}`,
+      accounts: [PRIVATE_KEY],
     }
   }
 };
