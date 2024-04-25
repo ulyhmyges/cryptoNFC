@@ -2,6 +2,14 @@ import {expect} from "chai";
 import {ethers} from "hardhat";
 import InvoiceFactoryJSON from "../artifacts/contracts/InvoiceFactory.sol/InvoiceFactory.json";
 import {Bill, Status} from "../definition";
+import { Defender } from "@openzeppelin/defender-sdk";
+
+const credentials = {
+    relayerApiKey: "6gYFS6y8RVxCVvYrkC9o5g79shRgf43Q",
+    relayerApiSecret: "3H3fquZVLkL9NrEevm3JwWvStQ5tfvock8v3XRgDcFRJEZL7R169PwwhxTaZKNw4"
+};
+
+let myDefender: any, provider: any, signer: any;
 
 let bill: any;
 let owner0: any, owner1: any, owner2: any, owner3: any;
@@ -39,7 +47,14 @@ describe("InvoiceFactory contract", function() {
             customer: await owner1.getAddress(),
             seller: await owner2.getAddress()
         }
-        await contract.connect(owner3).createInvoice(bill);
+        myDefender = new Defender(credentials);
+
+        provider = myDefender.relaySigner.getProvider();
+        signer = await myDefender.relaySigner.getSigner(provider);
+
+        const c = new ethers.Contract(address, InvoiceFactoryJSON.abi, signer);
+        const res = await c.createInvoice(bill);
+        console.log(res);
     })
 
     // it("TEST INVOICE_ROLE UnauthorizedAccount getInvoice method", async function() {
