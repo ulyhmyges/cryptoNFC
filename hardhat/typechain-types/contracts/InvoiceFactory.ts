@@ -54,8 +54,10 @@ export interface InvoiceFactoryInterface extends Interface {
   getFunction(
     nameOrSignature:
       | "DEFAULT_ADMIN_ROLE"
+      | "STORE_RELAYER_ADDRESS"
       | "createInvoice"
       | "deployedInvoice"
+      | "getBalance"
       | "getDeployedInvoice"
       | "getRoleAdmin"
       | "grantRole"
@@ -66,11 +68,19 @@ export interface InvoiceFactoryInterface extends Interface {
   ): FunctionFragment;
 
   getEvent(
-    nameOrSignatureOrTopic: "RoleAdminChanged" | "RoleGranted" | "RoleRevoked"
+    nameOrSignatureOrTopic:
+      | "CashReceived"
+      | "RoleAdminChanged"
+      | "RoleGranted"
+      | "RoleRevoked"
   ): EventFragment;
 
   encodeFunctionData(
     functionFragment: "DEFAULT_ADMIN_ROLE",
+    values?: undefined
+  ): string;
+  encodeFunctionData(
+    functionFragment: "STORE_RELAYER_ADDRESS",
     values?: undefined
   ): string;
   encodeFunctionData(
@@ -80,6 +90,10 @@ export interface InvoiceFactoryInterface extends Interface {
   encodeFunctionData(
     functionFragment: "deployedInvoice",
     values: [BigNumberish]
+  ): string;
+  encodeFunctionData(
+    functionFragment: "getBalance",
+    values?: undefined
   ): string;
   encodeFunctionData(
     functionFragment: "getDeployedInvoice",
@@ -115,6 +129,10 @@ export interface InvoiceFactoryInterface extends Interface {
     data: BytesLike
   ): Result;
   decodeFunctionResult(
+    functionFragment: "STORE_RELAYER_ADDRESS",
+    data: BytesLike
+  ): Result;
+  decodeFunctionResult(
     functionFragment: "createInvoice",
     data: BytesLike
   ): Result;
@@ -122,6 +140,7 @@ export interface InvoiceFactoryInterface extends Interface {
     functionFragment: "deployedInvoice",
     data: BytesLike
   ): Result;
+  decodeFunctionResult(functionFragment: "getBalance", data: BytesLike): Result;
   decodeFunctionResult(
     functionFragment: "getDeployedInvoice",
     data: BytesLike
@@ -141,6 +160,19 @@ export interface InvoiceFactoryInterface extends Interface {
     functionFragment: "supportsInterface",
     data: BytesLike
   ): Result;
+}
+
+export namespace CashReceivedEvent {
+  export type InputTuple = [from: AddressLike, amount: BigNumberish];
+  export type OutputTuple = [from: string, amount: bigint];
+  export interface OutputObject {
+    from: string;
+    amount: bigint;
+  }
+  export type Event = TypedContractEvent<InputTuple, OutputTuple, OutputObject>;
+  export type Filter = TypedDeferredTopicFilter<Event>;
+  export type Log = TypedEventLog<Event>;
+  export type LogDescription = TypedLogDescription<Event>;
 }
 
 export namespace RoleAdminChangedEvent {
@@ -246,6 +278,8 @@ export interface InvoiceFactory extends BaseContract {
 
   DEFAULT_ADMIN_ROLE: TypedContractMethod<[], [string], "view">;
 
+  STORE_RELAYER_ADDRESS: TypedContractMethod<[], [string], "view">;
+
   createInvoice: TypedContractMethod<
     [bill: BillDefinition.BillStruct],
     [void],
@@ -253,6 +287,8 @@ export interface InvoiceFactory extends BaseContract {
   >;
 
   deployedInvoice: TypedContractMethod<[arg0: BigNumberish], [string], "view">;
+
+  getBalance: TypedContractMethod<[], [bigint], "view">;
 
   getDeployedInvoice: TypedContractMethod<[], [string[]], "view">;
 
@@ -296,6 +332,9 @@ export interface InvoiceFactory extends BaseContract {
     nameOrSignature: "DEFAULT_ADMIN_ROLE"
   ): TypedContractMethod<[], [string], "view">;
   getFunction(
+    nameOrSignature: "STORE_RELAYER_ADDRESS"
+  ): TypedContractMethod<[], [string], "view">;
+  getFunction(
     nameOrSignature: "createInvoice"
   ): TypedContractMethod<
     [bill: BillDefinition.BillStruct],
@@ -305,6 +344,9 @@ export interface InvoiceFactory extends BaseContract {
   getFunction(
     nameOrSignature: "deployedInvoice"
   ): TypedContractMethod<[arg0: BigNumberish], [string], "view">;
+  getFunction(
+    nameOrSignature: "getBalance"
+  ): TypedContractMethod<[], [bigint], "view">;
   getFunction(
     nameOrSignature: "getDeployedInvoice"
   ): TypedContractMethod<[], [string[]], "view">;
@@ -344,6 +386,13 @@ export interface InvoiceFactory extends BaseContract {
   ): TypedContractMethod<[interfaceId: BytesLike], [boolean], "view">;
 
   getEvent(
+    key: "CashReceived"
+  ): TypedContractEvent<
+    CashReceivedEvent.InputTuple,
+    CashReceivedEvent.OutputTuple,
+    CashReceivedEvent.OutputObject
+  >;
+  getEvent(
     key: "RoleAdminChanged"
   ): TypedContractEvent<
     RoleAdminChangedEvent.InputTuple,
@@ -366,6 +415,17 @@ export interface InvoiceFactory extends BaseContract {
   >;
 
   filters: {
+    "CashReceived(address,uint256)": TypedContractEvent<
+      CashReceivedEvent.InputTuple,
+      CashReceivedEvent.OutputTuple,
+      CashReceivedEvent.OutputObject
+    >;
+    CashReceived: TypedContractEvent<
+      CashReceivedEvent.InputTuple,
+      CashReceivedEvent.OutputTuple,
+      CashReceivedEvent.OutputObject
+    >;
+
     "RoleAdminChanged(bytes32,bytes32,bytes32)": TypedContractEvent<
       RoleAdminChangedEvent.InputTuple,
       RoleAdminChangedEvent.OutputTuple,

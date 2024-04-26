@@ -39,8 +39,8 @@
       ]
     },
     "/Users/ulyh/cours_esgi/cours_esgi_4e/helderSALVADOR/cryptoNFC/hardhat/contracts/InvoiceFactory.sol": {
-      "lastModificationDate": 1713944488506,
-      "contentHash": "80fe134e3ab237b210c26eb7b650b181",
+      "lastModificationDate": 1714116057790,
+      "contentHash": "f07682ba54d1471f3c6ca262889142dd",
       "sourceName": "contracts/InvoiceFactory.sol",
       "solcConfig": {
         "version": "0.8.24",

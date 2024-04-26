@@ -7,13 +7,13 @@ import "./BillDefinition.sol";
 
 contract InvoiceFactory is AccessControl {
 
-    //bytes32 public constant ADMIN_ROLE = keccak256("ADMIN_ROLE");
+    event CashReceived(address from, uint256 amount);
 
-    address private STORE_RELAYER_ADDRESS = 0xC6A2907273Ab4157EB8594f471cB24F89aF71D3D;
+    address payable public STORE_RELAYER_ADDRESS = payable(0xC6A2907273Ab4157EB8594f471cB24F89aF71D3D);
     address[] public deployedInvoice;
 
-    constructor(address add) {
-        STORE_RELAYER_ADDRESS = add;
+    constructor(address add) payable {
+        STORE_RELAYER_ADDRESS = payable(add);
         _grantRole(DEFAULT_ADMIN_ROLE, STORE_RELAYER_ADDRESS);
     }
 
@@ -24,5 +24,13 @@ contract InvoiceFactory is AccessControl {
 
     function getDeployedInvoice() public view returns (address[] memory){
         return deployedInvoice;
+    }
+
+    receive() external payable {
+        emit CashReceived(msg.sender, msg.value);
+    }
+
+    function getBalance() public view returns (uint256) {
+        return address(this).balance;
     }
 }

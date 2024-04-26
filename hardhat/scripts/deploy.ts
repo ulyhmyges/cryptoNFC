@@ -25,6 +25,8 @@ async function main() {
 
     console.log(`Contract deployed to ${await deployment.getAddress()}`);
     // => deployed to 0x794623b0B84fdC9FE785F98B47BCc7B2A9E8b950
+    // => deployed to 0x0D73d0505778C5C6B8499796532ad0586cf9AD7e
+
 }
 
 // We recommend this pattern to be able to use async/await everywhere
