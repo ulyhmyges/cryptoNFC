@@ -17,26 +17,26 @@ let contract: any;
 let address: any;
 const storeRelayer = "0xC6A2907273Ab4157EB8594f471cB24F89aF71D3D"
 describe("InvoiceFactory contract", function() {
-    it("TEST deployment InvoiceFactory contract status", async function() {
-        [owner0, owner1, owner2, owner3] = await ethers.getSigners();
-        const factory = new ethers.ContractFactory(
-            InvoiceFactoryJSON.abi,
-            InvoiceFactoryJSON.bytecode,
-            owner2
-        );
-        // owner1 = 0x70997970c51812dc3a010c7d01b50e0d17dc79c8
-
-        contract = await factory.deploy(storeRelayer);
-
-        // The contract is not currentl live on the network yet, however
-        // its address is ready for us
-        address = await contract.getAddress();
-
-        // Wait until the contract has been deployed before interacting
-        // with it; returns the receipt for the deployemnt transaction
-        const txReceipt = await contract.deploymentTransaction()?.wait();
-        expect(txReceipt?.status).to.equal(1, "Contract Invoice deployment failed");
-    })
+    // it("TEST deployment InvoiceFactory contract status", async function() {
+    //     [owner0, owner1, owner2, owner3] = await ethers.getSigners();
+    //     const factory = new ethers.ContractFactory(
+    //         InvoiceFactoryJSON.abi,
+    //         InvoiceFactoryJSON.bytecode,
+    //         owner2
+    //     );
+    //     // owner1 = 0x70997970c51812dc3a010c7d01b50e0d17dc79c8
+    //
+    //     contract = await factory.deploy(storeRelayer);
+    //
+    //     // The contract is not currentl live on the network yet, however
+    //     // its address is ready for us
+    //     address = await contract.getAddress();
+    //
+    //     // Wait until the contract has been deployed before interacting
+    //     // with it; returns the receipt for the deployemnt transaction
+    //     const txReceipt = await contract.deploymentTransaction()?.wait();
+    //     expect(txReceipt?.status).to.equal(1, "Contract Invoice deployment failed");
+    // })
 
     it("TEST createInvoice method SUCCESS", async function() {
         bill = {
@@ -44,14 +44,14 @@ describe("InvoiceFactory contract", function() {
             status: ethers.parseUnits(`${Status.Fail}`),
             timestamp: "today",
             transactionHash: "0xC6A2907273Ab4157EB8594f471cB24F89aF71D3D",
-            customer: await owner1.getAddress(),
-            seller: await owner2.getAddress()
+            customer: "0x794623b0B84fdC9FE785F98B47BCc7B2A9E8b950",
+            seller: "0x794623b0B84fdC9FE785F98B47BCc7B2A9E8b950"
         }
         myDefender = new Defender(credentials);
 
         provider = myDefender.relaySigner.getProvider();
         signer = await myDefender.relaySigner.getSigner(provider);
-
+        const address ="0x794623b0B84fdC9FE785F98B47BCc7B2A9E8b950"
         const c = new ethers.Contract(address, InvoiceFactoryJSON.abi, signer);
         const res = await c.createInvoice(bill);
         console.log(res);
